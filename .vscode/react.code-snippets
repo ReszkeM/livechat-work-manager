@@ -1,0 +1,17 @@
+{
+  "React": {
+    "scope": "javascriptreact,typescriptreact",
+    "prefix": "react",
+    "body": [
+      "import type { FC } from \"react\";",
+      "",
+      "type Props = {};",
+      "",
+      "export const ${1:${TM_FILENAME_BASE/(^|-)(.)/${2:/upcase}/g}}: FC<Props> = ({}) => {",
+      "  return <></>;",
+      "};",
+      ""
+    ],
+    "description": "React Component"
+  }
+}
