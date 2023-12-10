@@ -1,15 +1,16 @@
 import { useState } from "react";
 
+import "@livechat/design-system-react-components/dist/style.css";
+import "./App.css";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "./assets/vite.svg";
-
-import "./App.css";
+import { AuthorizationProvider } from "./contexts/authorization/AuthorizationProvider";
 
 export const App = () => {
   const [count, setCount] = useState(0);
 
   return (
-    <>
+    <AuthorizationProvider>
       <div>
         <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
           <img src={viteLogo} className="logo" alt="Vite logo" />
@@ -30,6 +31,6 @@ export const App = () => {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
-    </>
+    </AuthorizationProvider>
   );
 };

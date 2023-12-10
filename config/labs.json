@@ -1,0 +1,4 @@
+{
+  "authorization_server_url": "https://accounts.labs.livechat.com",
+  "redirect_url": "http://localhost:5173/"
+}
