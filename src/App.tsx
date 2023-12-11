@@ -1,12 +1,12 @@
-import { useState } from "react";
+import { FC, useState } from "react";
 
 import "@livechat/design-system-react-components/dist/style.css";
 import "./App.css";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "./assets/vite.svg";
-import { AuthorizationProvider } from "./contexts/authorization/AuthorizationProvider";
+import { AuthorizationProvider } from "./contexts/authorization/Provider";
 
-export const App = () => {
+export const App: FC = () => {
   const [count, setCount] = useState(0);
 
   return (
